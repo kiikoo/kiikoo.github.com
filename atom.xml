@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://kiikoo.github.com/atom.xml" rel="self"/>
   <link href="http://kiikoo.github.com/"/>
-  <updated>2012-08-03T13:08:53+08:00</updated>
+  <updated>2012-08-03T13:24:28+08:00</updated>
   <id>http://kiikoo.github.com/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,5 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[test my blog]]></title>
+    <link href="http://kiikoo.github.com/blog/2012/08/03/test-my-blog/"/>
+    <updated>2012-08-03T13:14:00+08:00</updated>
+    <id>http://kiikoo.github.com/blog/2012/08/03/test-my-blog</id>
+    <content type="html"><![CDATA[<p><strong> test blog by wayneLin </strong>
+Dear suki,
+Hello!</p>
+
+<p>suki，你好!
+测试blog地址。</p>
+
+<h2>亚信联创科技有限公司</h2>
+]]></content>
+  </entry>
   
 </feed>
