@@ -1,0 +1,34 @@
+---
+layout: post
+title: "DNS"
+date: 2012-08-03 13:14
+comments: true
+categories: 
+---
+#什么是DNS
+DNS 是域名系统 (Domain Name System) 的缩写，是因特网的一项核心服务，它作为可以将域名和IP地址相互映射的一个分布式数据库，能够使人更方便的访问互联网，而不用去记住能够被机器直接读取的IP数串。
+#DNS查询原理
+###查询原理
+![查询原理](/images/mypicture/dns.png)
+#搭建DNS服务器
+* 装BIND软件
+* 配置/etc/named.conf
+* 在/var/named/下设定zone file
+* 启动服务验证
+
+###配置/etc/named.conf
+![named.conf](/images/mypicture/namedconf.png)
+###配置zone file
+![named.conf](/images/mypicture/zoneconf.png)
+#了解DNS攻击
+##DNS劫持
+DNS劫持就是通过劫持了DNS服务器，通过某些手段取得某域名的解析记录控制权，进而修改此域名的解析结果，导致对该域名的访问由原IP地址转入到修改后的指定IP，其结果就是对特定的网址不能访问或访问的是假网址，从而实现窃取资料或者破坏原有正常服务的目的。
+####解决方案
+修改/etc/resolv.conf，使用安全免费的DNS解析服务，例如google的DNS服务: 8.8.8.8
+##DNS污染
+DNS污染是一种让一般用户由于得到虚假目标主机IP而不能与其通信的方法，是一种DNS缓存投毒攻击（DNS cache poisoning）。其工作方式是：由于通常的DNS查询没有任何认证机制，而且DNS查询通常基于的UDP是无连接不可靠的协议，因此DNS的查询非常容易被篡改，通过对UDP端口53上的DNS查询进行入侵检测，一经发现与关键词相匹配的请求则立即伪装成目标域名的解析服务器（NS，Name Server）给查询者返回虚假结果。
+
+原理见视频链接:
+[DNS污染原理](http://www.checkpoint.com/defense/advisories/public/dnsvideo/index.html)
+
+
