@@ -1,3 +1,10 @@
+---
+layout: post
+title: "httpclient_encoding_decoding"
+date: 2012-08-06 21:26
+comments: true
+categories:
+---
 ###术语约定
 * Encoding: 编码（动词）
 * Decoding: 解码（动词）
