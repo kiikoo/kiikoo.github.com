@@ -1,3 +1,10 @@
+---
+layout: post
+title: "markdown_syntax"
+date: 2012-08-06 20:26
+comments: true
+categories:
+---
     # Mou
     
     ![Mou icon](http://mouapp.com/Mou_128.png)
