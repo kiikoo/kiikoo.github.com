@@ -4,7 +4,7 @@
   <title><![CDATA[阿宝的Blog]]></title>
   <link href="http://kiikoo.github.com/atom.xml" rel="self"/>
   <link href="http://kiikoo.github.com/"/>
-  <updated>2012-08-07T09:10:40+08:00</updated>
+  <updated>2012-08-07T12:21:46+08:00</updated>
   <id>http://kiikoo.github.com/</id>
   <author>
     <name><![CDATA[阿宝]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[悲剧的奥运会]]></title>
+    <link href="http://kiikoo.github.com/blog/2012/08/07/bei-ju-de-ao-yun-hui/"/>
+    <updated>2012-08-07T12:12:00+08:00</updated>
+    <id>http://kiikoo.github.com/blog/2012/08/07/bei-ju-de-ao-yun-hui</id>
+    <content type="html"><![CDATA[<p>一场完美的奥运会就毁在2b的裁判手里，我们无法左右裁判，可惜一些美好的东西毁在我们自己手里，千里之堤毁于蚁穴。孤掌难鸣，有些东西无力改变，那就提高自己，祝我们好运！</p>
+
+<p><img src="http://kiikoo.github.com/images/mypicture/chenyibing.jpg" alt="陈一冰" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[httpclient_encoding_decoding]]></title>
