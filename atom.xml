@@ -4,7 +4,7 @@
   <title><![CDATA[阿宝的Blog]]></title>
   <link href="http://kiikoo.github.com/atom.xml" rel="self"/>
   <link href="http://kiikoo.github.com/"/>
-  <updated>2012-08-07T12:21:46+08:00</updated>
+  <updated>2012-08-08T10:17:37+08:00</updated>
   <id>http://kiikoo.github.com/</id>
   <author>
     <name><![CDATA[阿宝]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[关于台风]]></title>
+    <link href="http://kiikoo.github.com/blog/2012/08/08/guan-yu-tai-feng/"/>
+    <updated>2012-08-08T10:09:00+08:00</updated>
+    <id>http://kiikoo.github.com/blog/2012/08/08/guan-yu-tai-feng</id>
+    <content type="html"><![CDATA[<p>每年都会来好几次台风，希望少些损失。。。</p>
+
+<p><a href="http://typhoon.zjwater.gov.cn/">浙江台风实时查询网站</a></p>
+
+<p><img src="http://kiikoo.github.com/images/mypicture/haikui.jpg" alt="海葵实时图片" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[悲剧的奥运会]]></title>
@@ -265,6 +278,10 @@ public void handleQueryParameters() {
 <p>如果Servlet正确设置了响应数据的charset，那么HTTP响应数据中就会包含Content-Type Header。HttpClient的getResponseBodyAsString方法就可以正确decoding响应数据。</p>
 
 <p><a href="http://jarfield.iteye.com/blog/599866">原文出处</a></p>
+
+<h3>补充：</h3>
+
+<p>apache在不做rewrite的情况下不会对url进行decode/encode，当rewrite时默认会先进行decode，然后在encode传给tomcat/jboss容器。当然在rewrite的情况下可以制定参数NE不做decode。具体可以参考apache文档。</p>
 ]]></content>
   </entry>
   
