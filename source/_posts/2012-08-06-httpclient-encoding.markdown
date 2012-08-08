@@ -209,3 +209,6 @@ useBodyEncodingForURI是与URI charset相关的另一个属性。如果该属性
 如果Servlet正确设置了响应数据的charset，那么HTTP响应数据中就会包含Content-Type Header。HttpClient的getResponseBodyAsString方法就可以正确decoding响应数据。
 
 [原文出处](http://jarfield.iteye.com/blog/599866)							
+
+###补充：
+apache在不做rewrite的情况下不会对url进行decode/encode，当rewrite时默认会先进行decode，然后在encode传给tomcat/jboss容器。当然在rewrite的情况下可以制定参数NE不做decode。具体可以参考apache文档。
