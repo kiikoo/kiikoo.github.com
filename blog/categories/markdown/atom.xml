@@ -1,96 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>markdown_syntax - 阿宝的Blog</title>
-  <meta name="author" content="阿宝">
-
-  
-  <meta name="description" content="Markdown简介 Markdown 是一种轻量级的标记语言，由John Gruber和Aaron Swartz创建，使其成为可读性最大并可再发行的可输入输出的格式。这种语言创建灵感来自于已经存在的带标记的电子邮件文本。Markdown 允许 HTML 语法, 所以使用者如果需要可以直接用 &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://kiikoo.github.com/blog/2012/08/06/markdown/">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="/javascripts/ender.js"></script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="/atom.xml" rel="alternate" title="阿宝的Blog" type="application/atom+xml">
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">阿宝的Blog</a></h1>
-  
-    <h2>再见青春，再见美丽的疼痛.</h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:kiikoo.github.com" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div>
-<article class="hentry" role="article">
-  
-  <header>
+  <title><![CDATA[Category: markdown | 阿宝的Blog]]></title>
+  <link href="http://kiikoo.github.com/blog/categories/markdown/atom.xml" rel="self"/>
+  <link href="http://kiikoo.github.com/"/>
+  <updated>2012-08-11T15:21:05+08:00</updated>
+  <id>http://kiikoo.github.com/</id>
+  <author>
+    <name><![CDATA[阿宝]]></name>
     
-      <h1 class="entry-title">Markdown_syntax</h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-
-
-<time datetime="2012-08-06T20:26:00+08:00" pubdate data-updated="true">Aug 6<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-<div class="entry-content"><h3>Markdown简介</h3>
+  <entry>
+    <title type="html"><![CDATA[markdown_syntax]]></title>
+    <link href="http://kiikoo.github.com/blog/2012/08/06/markdown/"/>
+    <updated>2012-08-06T20:26:00+08:00</updated>
+    <id>http://kiikoo.github.com/blog/2012/08/06/markdown</id>
+    <content type="html"><![CDATA[<h3>Markdown简介</h3>
 
 <p>Markdown 是一种轻量级的标记语言，由John Gruber和Aaron Swartz创建，使其成为可读性最大并可再发行的可输入输出的格式。这种语言创建灵感来自于已经存在的带标记的电子邮件文本。Markdown 允许 HTML 语法, 所以使用者如果需要可以直接用 HTML来表示是可以的。Markdown最初由Gruber应用在Perl语言中，但现在已经有多种编程语言应用了。它是开源项目，并以BSD-style许可证的许可方式以插件形式或内容管理系统形式发布。</p>
 
@@ -318,136 +246,7 @@ Follow [@chenluois](http://twitter.com/chenluois) on Twitter for the latest news
 
 For feedback, use the menu `Help` - `Send Feedback`
 </code></pre>
-</div>
-
-
-  <footer>
-    <p class="meta">
-      
+]]></content>
+  </entry>
   
-
-<span class="byline author vcard">Posted by <span class="fn">阿宝</span></span>
-
-      
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-08-06T20:26:00+08:00" pubdate data-updated="true">Aug 6<span>th</span>, 2012</time>
-      
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/markdown/'>markdown</a>
-  
-</span>
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://kiikoo.github.com/blog/2012/08/06/markdown/" data-via="" data-counturl="http://kiikoo.github.com/blog/2012/08/06/markdown/" >Tweet</a>
-  
-  
-  
-</div>
-
-    
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/blog/2012/08/03/dns/" title="Previous Post: DNS">&laquo; DNS</a>
-      
-      
-        <a class="basic-alignment right" href="/blog/2012/08/06/httpclient-encoding/" title="Next Post: httpclient_encoding_decoding">httpclient_encoding_decoding &raquo;</a>
-      
-    </p>
-  </footer>
-</article>
-
-</div>
-
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2012/08/08/ru-he-xue-xi-python/">如何学习python</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/08/08/guan-yu-tai-feng/">关于台风</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/08/07/bei-ju-de-ao-yun-hui/">悲剧的奥运会</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/08/06/httpclient-encoding/">httpclient_encoding_decoding</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/08/06/markdown/">markdown_syntax</a>
-      </li>
-    
-  </ul>
-</section>
-<section>
-  <h1>Categories</h1>
-  <ul id="categories">
-    <li class='category'><a href='/blog/categories/markdown/'>markdown (1)</a></li>
-
-  </ul>
-</section>
-
-
-
-
-
-
-  
-</aside>
-
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2012 - 阿宝 -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
-  
-
-
-
-
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
-</body>
-</html>
+</feed>

@@ -4,7 +4,7 @@
   <title><![CDATA[阿宝的Blog]]></title>
   <link href="http://kiikoo.github.com/atom.xml" rel="self"/>
   <link href="http://kiikoo.github.com/"/>
-  <updated>2012-08-08T22:30:47+08:00</updated>
+  <updated>2012-08-11T15:21:05+08:00</updated>
   <id>http://kiikoo.github.com/</id>
   <author>
     <name><![CDATA[阿宝]]></name>
@@ -19,6 +19,9 @@
     <updated>2012-08-08T22:23:00+08:00</updated>
     <id>http://kiikoo.github.com/blog/2012/08/08/ru-he-xue-xi-python</id>
     <content type="html"><![CDATA[<p>很多时候当我们开始学习一门新的语言时，总是遵从着这一步骤。但是，如果你准备学习Python，那么你首先要做的就是打破这一惯例。</p>
+
+<!--more-->
+
 
 <p>在Python的世界里，你不可能也没有一本书让你起步，因为关于Python学习的出版物实在是太少了，少到你根本找不到一本合适的（PS：当然，这里我撒谎了，其实还是有几本可以满足你的求知欲望）。</p>
 
