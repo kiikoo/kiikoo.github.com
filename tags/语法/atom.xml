@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: markdown | 阿宝的Blog]]></title>
-  <link href="http://kiikoo.github.com/blog/categories/markdown/atom.xml" rel="self"/>
+  <title><![CDATA[Tag: 语法 | 阿宝的Blog]]></title>
+  <link href="http://kiikoo.github.com/tags/语法/atom.xml" rel="self"/>
   <link href="http://kiikoo.github.com/"/>
-  <updated>2012-08-11T15:21:05+08:00</updated>
+  <updated>2012-08-12T12:03:55+08:00</updated>
   <id>http://kiikoo.github.com/</id>
   <author>
     <name><![CDATA[阿宝]]></name>
@@ -35,6 +35,9 @@
 
 
 <p>这几款软件都支持所见即所得，即撰写后即可实时的看到转化后的效果。</p>
+
+<!--more-->
+
 
 <pre><code># Mou
 

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[阿宝的Blog]]></title>
-  <link href="http://kiikoo.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: 学习分享 | 阿宝的Blog]]></title>
+  <link href="http://kiikoo.github.com/blog/categories/%E5%AD%A6%E4%B9%A0%E5%88%86%E4%BA%AB/atom.xml" rel="self"/>
   <link href="http://kiikoo.github.com/"/>
   <updated>2012-08-12T12:03:55+08:00</updated>
   <id>http://kiikoo.github.com/</id>
@@ -218,30 +218,6 @@ disqus_show_comment_count: true
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[关于台风]]></title>
-    <link href="http://kiikoo.github.com/blog/2012/08/08/guan-yu-tai-feng/"/>
-    <updated>2012-08-08T10:09:00+08:00</updated>
-    <id>http://kiikoo.github.com/blog/2012/08/08/guan-yu-tai-feng</id>
-    <content type="html"><![CDATA[<p>每年都会来好几次台风，希望少些损失。。。</p>
-
-<p><a href="http://typhoon.zjwater.gov.cn/">浙江台风实时查询网站</a></p>
-
-<p><img src="http://kiikoo.github.com/images/mypicture/haikui.jpg" alt="海葵实时图片" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[悲剧的奥运会]]></title>
-    <link href="http://kiikoo.github.com/blog/2012/08/07/bei-ju-de-ao-yun-hui/"/>
-    <updated>2012-08-07T12:12:00+08:00</updated>
-    <id>http://kiikoo.github.com/blog/2012/08/07/bei-ju-de-ao-yun-hui</id>
-    <content type="html"><![CDATA[<p>一场完美的奥运会就毁在2b的裁判手里，我们无法左右裁判，可惜一些美好的东西毁在我们自己手里，千里之堤毁于蚁穴。孤掌难鸣，有些东西无力改变，那就提高自己，祝我们好运！</p>
-
-<p><img src="http://kiikoo.github.com/images/mypicture/chenyibing.jpg" alt="陈一冰" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
     <title type="html"><![CDATA[httpclient_encoding]]></title>
     <link href="http://kiikoo.github.com/blog/2012/08/06/httpclient-encoding/"/>
     <updated>2012-08-06T21:26:00+08:00</updated>
@@ -430,7 +406,7 @@ public void handleQueryParameters() {
 
 <h5>设置POST请求Body的charset</h5>
 
-<p>设置Body charset的方法很简单，只要调用javax.servlet.ServletRequest接口的setCharacterEncoding方法即可，比如request.setCharacterEncoding(&#8220;UTF-8&#8221;)。需要注意的是，该方法必须在读取任何请求参数之前调用，才有效果。详情可以参见该方法的注释：</p>
+<p>设置Body charset的方法很简单，只要调用javax.servlet.ServletRequest接口的setCharacterEncoding方法即可，比如request.setCharacterEncoding("UTF-8")。需要注意的是，该方法必须在读取任何请求参数之前调用，才有效果。详情可以参见该方法的注释：</p>
 
 <pre><code>    /** 
      * Overrides the name of the character encoding used in the body of this 
@@ -449,7 +425,7 @@ public void handleQueryParameters() {
 
 <h3>响应数据的charset</h3>
 
-<p>设置响应数据charset的方法很简单，只要调用javax.servlet.ServletResponse接口的setContentType方法即可，比如response.setContentType(&#8220;text/html;charset=UTF-8&#8221;)。需要注意的是，该方法的调用时机也是有讲究的，详情可以参见该方法的注释：</p>
+<p>设置响应数据charset的方法很简单，只要调用javax.servlet.ServletResponse接口的setContentType方法即可，比如response.setContentType("text/html;charset=UTF-8")。需要注意的是，该方法的调用时机也是有讲究的，详情可以参见该方法的注释：</p>
 
 <pre><code>    /** 
      * Sets the content type of the response being sent to 
@@ -744,7 +720,7 @@ For feedback, use the menu `Help` - `Send Feedback`
 
 <h3>查询原理</h3>
 
-<p><img src="http://kiikoo.github.com/images/mypicture/dns.png" alt="查询原理" /></p>
+<p><img src="/images/mypicture/dns.png" alt="查询原理" /></p>
 
 <h1>搭建DNS服务器</h1>
 
@@ -758,11 +734,11 @@ For feedback, use the menu `Help` - `Send Feedback`
 
 <h3>配置/etc/named.conf</h3>
 
-<p><img src="http://kiikoo.github.com/images/mypicture/namedconf.png" alt="named.conf" /></p>
+<p><img src="/images/mypicture/namedconf.png" alt="named.conf" /></p>
 
 <h3>配置zone file</h3>
 
-<p><img src="http://kiikoo.github.com/images/mypicture/zoneconf.png" alt="named.conf" /></p>
+<p><img src="/images/mypicture/zoneconf.png" alt="named.conf" /></p>
 
 <!--more-->
 

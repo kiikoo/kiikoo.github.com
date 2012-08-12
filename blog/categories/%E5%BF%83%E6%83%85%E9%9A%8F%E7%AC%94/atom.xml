@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 心情随笔 | 阿宝的Blog]]></title>
+  <link href="http://kiikoo.github.com/blog/categories/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%94/atom.xml" rel="self"/>
+  <link href="http://kiikoo.github.com/"/>
+  <updated>2012-08-12T12:03:55+08:00</updated>
+  <id>http://kiikoo.github.com/</id>
+  <author>
+    <name><![CDATA[阿宝]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[关于台风]]></title>
+    <link href="http://kiikoo.github.com/blog/2012/08/08/guan-yu-tai-feng/"/>
+    <updated>2012-08-08T10:09:00+08:00</updated>
+    <id>http://kiikoo.github.com/blog/2012/08/08/guan-yu-tai-feng</id>
+    <content type="html"><![CDATA[<p>每年都会来好几次台风，希望少些损失。。。</p>
+
+<p><a href="http://typhoon.zjwater.gov.cn/">浙江台风实时查询网站</a></p>
+
+<p><img src="/images/mypicture/haikui.jpg" alt="海葵实时图片" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[悲剧的奥运会]]></title>
+    <link href="http://kiikoo.github.com/blog/2012/08/07/bei-ju-de-ao-yun-hui/"/>
+    <updated>2012-08-07T12:12:00+08:00</updated>
+    <id>http://kiikoo.github.com/blog/2012/08/07/bei-ju-de-ao-yun-hui</id>
+    <content type="html"><![CDATA[<p>一场完美的奥运会就毁在2b的裁判手里，我们无法左右裁判，可惜一些美好的东西毁在我们自己手里，千里之堤毁于蚁穴。孤掌难鸣，有些东西无力改变，那就提高自己，祝我们好运！</p>
+
+<p><img src="/images/mypicture/chenyibing.jpg" alt="陈一冰" /></p>
+]]></content>
+  </entry>
+  
+</feed>

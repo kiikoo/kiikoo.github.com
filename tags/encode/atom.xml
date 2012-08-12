@@ -1,100 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>httpclient_encoding - 阿宝的Blog</title>
-  <meta name="author" content="阿宝">
-
-  
-  <meta name="description" content="术语约定 Encoding: 编码（动词）
-Decoding: 解码（动词）
-Charset: 编码或解码使用的字符集 哪些数据需要encoding 一个Http请求的数据大致包括URI、Header、和Body三个部分。这三个部分貌似都需要encoding，不过我这次只涉及到URI和Body。 &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://kiikoo.github.com/blog/2012/08/06/httpclient-encoding/">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="/javascripts/ender.js"></script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="/atom.xml" rel="alternate" title="阿宝的Blog" type="application/atom+xml">
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">阿宝的Blog</a></h1>
-  
-    <h2>再见青春，再见美丽的疼痛.</h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:kiikoo.github.com" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div>
-<article class="hentry" role="article">
-  
-  <header>
+  <title><![CDATA[Tag: encode | 阿宝的Blog]]></title>
+  <link href="http://kiikoo.github.com/tags/encode/atom.xml" rel="self"/>
+  <link href="http://kiikoo.github.com/"/>
+  <updated>2012-08-12T12:03:55+08:00</updated>
+  <id>http://kiikoo.github.com/</id>
+  <author>
+    <name><![CDATA[阿宝]]></name>
     
-      <h1 class="entry-title">Httpclient_encoding</h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-
-
-<time datetime="2012-08-06T21:26:00+08:00" pubdate data-updated="true">Aug 6<span>th</span>, 2012</time>
-        
-         | <a href="#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-<div class="entry-content"><h3>术语约定</h3>
+  <entry>
+    <title type="html"><![CDATA[httpclient_encoding]]></title>
+    <link href="http://kiikoo.github.com/blog/2012/08/06/httpclient-encoding/"/>
+    <updated>2012-08-06T21:26:00+08:00</updated>
+    <id>http://kiikoo.github.com/blog/2012/08/06/httpclient-encoding</id>
+    <content type="html"><![CDATA[<h3>术语约定</h3>
 
 <ul>
 <li>Encoding: 编码（动词）</li>
@@ -278,7 +202,7 @@ public void handleQueryParameters() {
 
 <h5>设置POST请求Body的charset</h5>
 
-<p>设置Body charset的方法很简单，只要调用javax.servlet.ServletRequest接口的setCharacterEncoding方法即可，比如request.setCharacterEncoding(&#8220;UTF-8&#8221;)。需要注意的是，该方法必须在读取任何请求参数之前调用，才有效果。详情可以参见该方法的注释：</p>
+<p>设置Body charset的方法很简单，只要调用javax.servlet.ServletRequest接口的setCharacterEncoding方法即可，比如request.setCharacterEncoding("UTF-8")。需要注意的是，该方法必须在读取任何请求参数之前调用，才有效果。详情可以参见该方法的注释：</p>
 
 <pre><code>    /** 
      * Overrides the name of the character encoding used in the body of this 
@@ -297,7 +221,7 @@ public void handleQueryParameters() {
 
 <h3>响应数据的charset</h3>
 
-<p>设置响应数据charset的方法很简单，只要调用javax.servlet.ServletResponse接口的setContentType方法即可，比如response.setContentType(&#8220;text/html;charset=UTF-8&#8221;)。需要注意的是，该方法的调用时机也是有讲究的，详情可以参见该方法的注释：</p>
+<p>设置响应数据charset的方法很简单，只要调用javax.servlet.ServletResponse接口的setContentType方法即可，比如response.setContentType("text/html;charset=UTF-8")。需要注意的是，该方法的调用时机也是有讲究的，详情可以参见该方法的注释：</p>
 
 <pre><code>    /** 
      * Sets the content type of the response being sent to 
@@ -337,182 +261,7 @@ public void handleQueryParameters() {
 <h3>补充：</h3>
 
 <p>apache在不做rewrite的情况下不会对url进行decode/encode，当rewrite时默认会先进行decode，然后在encode传给tomcat/jboss容器。当然在rewrite的情况下可以制定参数NE不做decode。具体可以参考apache文档。</p>
-</div>
-
-
-  <footer>
-    <p class="meta">
-      
+]]></content>
+  </entry>
   
-
-<span class="byline author vcard">Posted by <span class="fn">阿宝</span></span>
-
-      
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-08-06T21:26:00+08:00" pubdate data-updated="true">Aug 6<span>th</span>, 2012</time>
-      
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/学习分享/'>学习分享</a>
-  
-</span>
-
-
-      
-
-<span class="tags">
-  
-     Tag: <a class='tag' href='/tags/decode/'>decode</a>, <a class='tag' href='/tags/encode/'>encode</a>
-  
-</span>
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://kiikoo.github.com/blog/2012/08/06/httpclient-encoding/" data-via="" data-counturl="http://kiikoo.github.com/blog/2012/08/06/httpclient-encoding/" >Tweet</a>
-  
-  
-  
-</div>
-
-    
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/blog/2012/08/06/markdown/" title="Previous Post: markdown_syntax">&laquo; markdown_syntax</a>
-      
-      
-        <a class="basic-alignment right" href="/blog/2012/08/07/bei-ju-de-ao-yun-hui/" title="Next Post: 悲剧的奥运会">悲剧的奥运会 &raquo;</a>
-      
-    </p>
-  </footer>
-</article>
-
-  <section>
-    <h1>Comments</h1>
-    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-  </section>
-
-</div>
-
-<aside class="sidebar">
-  
-    <section>
-  <h1>Categories</h1>
-  <ul id="categories">
-    <li><a href='/blog/categories/学习分享'>学习分享 (5)</a></li><li><a href='/blog/categories/心情随笔'>心情随笔 (2)</a></li>
-  </ul>
-</section>
-<section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2012/08/12/octopressge-xing-hua-pei-zhi/">octopress个性化配置</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/08/08/ru-he-xue-xi-python/">如何学习python</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/08/08/guan-yu-tai-feng/">关于台风</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/08/07/bei-ju-de-ao-yun-hui/">悲剧的奥运会</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/08/06/httpclient-encoding/">httpclient_encoding</a>
-      </li>
-    
-  </ul>
-</section>
-<section>
-  <h1>Tags</h1>
-  <ul class="tag-cloud">
-<a style="font-size: NaN%" href="/tags/dns/">DNS</a>
-<a style="font-size: NaN%" href="/tags/decode/">decode</a>
-<a style="font-size: NaN%" href="/tags/encode/">encode</a>
-<a style="font-size: NaN%" href="/tags/markdown/">markdown</a>
-<a style="font-size: NaN%" href="/tags/octopress/">octopress</a>
-<a style="font-size: NaN%" href="/tags/python/">python</a>
-<a style="font-size: NaN%" href="/tags/博客/">博客</a>
-<a style="font-size: NaN%" href="/tags/台风/">台风</a>
-<a style="font-size: NaN%" href="/tags/奥运会/">奥运会</a>
-<a style="font-size: NaN%" href="/tags/语法/">语法</a>
-
-  </ul>
-</section>
-
-
-
-
-
-
-  
-</aside>
-
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2012 - 阿宝 -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
-  
-
-<script type="text/javascript">
-      var disqus_shortname = 'kiikooblog';
-      
-        
-        // var disqus_developer = 1;
-        var disqus_identifier = 'http://kiikoo.github.com/blog/2012/08/06/httpclient-encoding/';
-        var disqus_url = 'http://kiikoo.github.com/blog/2012/08/06/httpclient-encoding/';
-        var disqus_script = 'embed.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
-
-
-
-
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
-</body>
-</html>
+</feed>

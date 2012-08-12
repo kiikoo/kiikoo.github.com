@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: DNS | 阿宝的Blog]]></title>
+  <link href="http://kiikoo.github.com/tags/dns/atom.xml" rel="self"/>
+  <link href="http://kiikoo.github.com/"/>
+  <updated>2012-08-12T12:03:55+08:00</updated>
+  <id>http://kiikoo.github.com/</id>
+  <author>
+    <name><![CDATA[阿宝]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[DNS]]></title>
+    <link href="http://kiikoo.github.com/blog/2012/08/03/dns/"/>
+    <updated>2012-08-03T13:14:00+08:00</updated>
+    <id>http://kiikoo.github.com/blog/2012/08/03/dns</id>
+    <content type="html"><![CDATA[<h1>什么是DNS</h1>
+
+<p>DNS 是域名系统 (Domain Name System) 的缩写，是因特网的一项核心服务，它作为可以将域名和IP地址相互映射的一个分布式数据库，能够使人更方便的访问互联网，而不用去记住能够被机器直接读取的IP数串。</p>
+
+<h1>DNS查询原理</h1>
+
+<h3>查询原理</h3>
+
+<p><img src="/images/mypicture/dns.png" alt="查询原理" /></p>
+
+<h1>搭建DNS服务器</h1>
+
+<ul>
+<li>装BIND软件</li>
+<li>配置/etc/named.conf</li>
+<li>在/var/named/下设定zone file</li>
+<li>启动服务验证</li>
+</ul>
+
+
+<h3>配置/etc/named.conf</h3>
+
+<p><img src="/images/mypicture/namedconf.png" alt="named.conf" /></p>
+
+<h3>配置zone file</h3>
+
+<p><img src="/images/mypicture/zoneconf.png" alt="named.conf" /></p>
+
+<!--more-->
+
+
+<h1>了解DNS攻击</h1>
+
+<h2>DNS劫持</h2>
+
+<p>DNS劫持就是通过劫持了DNS服务器，通过某些手段取得某域名的解析记录控制权，进而修改此域名的解析结果，导致对该域名的访问由原IP地址转入到修改后的指定IP，其结果就是对特定的网址不能访问或访问的是假网址，从而实现窃取资料或者破坏原有正常服务的目的。</p>
+
+<h4>解决方案</h4>
+
+<p>修改/etc/resolv.conf，使用安全免费的DNS解析服务，例如google的DNS服务: 8.8.8.8</p>
+
+<h2>DNS污染</h2>
+
+<p>DNS污染是一种让一般用户由于得到虚假目标主机IP而不能与其通信的方法，是一种DNS缓存投毒攻击（DNS cache poisoning）。其工作方式是：由于通常的DNS查询没有任何认证机制，而且DNS查询通常基于的UDP是无连接不可靠的协议，因此DNS的查询非常容易被篡改，通过对UDP端口53上的DNS查询进行入侵检测，一经发现与关键词相匹配的请求则立即伪装成目标域名的解析服务器（NS，Name Server）给查询者返回虚假结果。</p>
+
+<p>原理见视频链接:
+<a href="http://www.checkpoint.com/defense/advisories/public/dnsvideo/index.html">DNS污染原理</a></p>
+]]></content>
+  </entry>
+  
+</feed>
