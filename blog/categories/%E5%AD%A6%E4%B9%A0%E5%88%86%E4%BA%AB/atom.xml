@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 学习分享 | 阿宝的Blog]]></title>
   <link href="http://kiikoo.github.com/blog/categories/%E5%AD%A6%E4%B9%A0%E5%88%86%E4%BA%AB/atom.xml" rel="self"/>
   <link href="http://kiikoo.github.com/"/>
-  <updated>2012-08-12T21:04:06+08:00</updated>
+  <updated>2012-08-12T21:14:49+08:00</updated>
   <id>http://kiikoo.github.com/</id>
   <author>
     <name><![CDATA[阿宝]]></name>
@@ -12,131 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[octopress个性化配置]]></title>
-    <link href="http://kiikoo.github.com/blog/2012/08/12/octopressge-xing-hua-pei-zhi/"/>
-    <updated>2012-08-12T11:27:00+08:00</updated>
-    <id>http://kiikoo.github.com/blog/2012/08/12/octopressge-xing-hua-pei-zhi</id>
-    <content type="html"><![CDATA[<p>一直想搭建个博客，之前在iteye，sina等上面杂乱的写过一些，但是始终没有坚持下来，也没怎么更新。最近<a href="http://octopress.org">octopress</a>异常的火，我也忍不住用octopress+github搭建了自己的博客。折腾了几天，有了个雏形。
-octoprees官方整理了一个使用octopress搭建博客<a href="https://github.com/imathis/octopress/wiki/Octopress-Sites">列表</a>，我在这上面参考了不少，可以多去这些博客逛逛。</p>
-
-<!--more-->
-
-
-<ul>
-<li><h3>为octopress添加category列表</h3></li>
-</ul>
-
-
-<p><a href="http://codemacro.com/2012/07/18/add-category-list-to-octopress/">参考blog</a></p>
-
-<p>增加category_list插件</p>
-
-<p><a href="https://github.com/kiikoo/kiikoo.github.com/blob/source/plugins/category_list_tag.rb">category_list_tag.rb</a></p>
-
-<p>增加aside</p>
-
-<p>复制以下代码到source/_includes/asides/category_list.html。</p>
-
-<pre><code>&lt;section&gt;
- &lt;h1&gt;Categories&lt;/h1&gt;
- &lt;ul id="categories"&gt;
-   <li><a href='/blog/categories/学习分享'>学习分享 (5)</a></li><li><a href='/blog/categories/心情随笔'>心情随笔 (2)</a></li>
- &lt;/ul&gt;
-&lt;/section&gt;
-</code></pre>
-
-<p>配置侧边栏需要修改_config.yml文件，修改其default_asides项：</p>
-
-<pre><code> default_asides: [asides/category_list.html, asides/recent_posts.html]
-</code></pre>
-
-<ul>
-<li><h3>为octopress添加tag_cloud</h3></li>
-</ul>
-
-
-<p><a href="http://codemacro.com/2012/07/18/add-tag-to-octopress/">参考blog</a></p>
-
-<p>首先到https://github.com/robbyedwards/octopress-tag-pages和https://github.com/robbyedwards/octopress-tag-cloudclone这两个项目的代码。这两个项目分别用于产生tag page和tag cloud。 针对这两个插件，需要手工复制一些文件到你的octopress目录。</p>
-
-<ul>
-<li>octopress-tag-pages</li>
-</ul>
-
-
-<p>复制tag_generator.rb到/plugins目录；复制tag_index.html到/source/<em>layouts目录。需要注意的是，还需要复制tag_feed.xml到/source/</em>includes/custom/目录。这个官方文档里没提到，在我机器上rake generate时报错。其他文件就不需要复制了，都是些例子。</p>
-
-<ul>
-<li>octopress-tag-cloud</li>
-</ul>
-
-
-<p>仅复制tag_cloud.rb到/plugins目录即可。但这仅仅只是为liquid添加了一个tag（非本文所提tag）。如果要在侧边导航里添加一个tag cloud，我们还需要手动添加aside。</p>
-
-<p>复制以下代码到/source/_includes/custom/asides/tags.html。</p>
-
-<pre><code>&lt;section&gt;
-  &lt;h1&gt;Tags&lt;/h1&gt;
-  &lt;ul class="tag-cloud"&gt;
-    Liquid error: comparison of Array with Array failed
-  &lt;/ul&gt;
-&lt;/section&gt;
-</code></pre>
-
-<p>注明：</p>
-
-<pre><code> 这一部分我在使用的时候一直会报错，
- Liquid error: comparison of Array with Array failed。
- 原因还未定位到,
- 后面我将Liquid error: comparison of Array with Array failed
- 修改为<a style="font-size: NaN%" href="/tags/dns/">DNS</a>
-<a style="font-size: NaN%" href="/tags/decode/">decode</a>
-<a style="font-size: NaN%" href="/tags/encode/">encode</a>
-<a style="font-size: NaN%" href="/tags/markdown/">markdown</a>
-<a style="font-size: NaN%" href="/tags/octopress/">octopress</a>
-<a style="font-size: NaN%" href="/tags/python/">python</a>
-<a style="font-size: NaN%" href="/tags/博客/">博客</a>
-<a style="font-size: NaN%" href="/tags/台风/">台风</a>
-<a style="font-size: NaN%" href="/tags/奥运会/">奥运会</a>
-<a style="font-size: NaN%" href="/tags/语法/">语法</a>
-
- 就没错误了。
-</code></pre>
-
-<p>最后，当然是在_config.xml的default_asides 中添加这个tag cloud到导航栏，例如：</p>
-
-<pre><code> default_asides: [asides/category_list.html, asides/recent_posts.html, custom/asides/tags.html]
-</code></pre>
-
-<h4>在文章最后显示文章的tags：</h4>
-
-<p>将source/_layouts/page.html文件改为</p>
-
-<p><a href="https://github.com/kiikoo/kiikoo.github.com/blob/source/source/_layouts/page.html">page.html</a></p>
-
-<h4>Archive页面中展示以下效果</h4>
-
-<pre><code> posted in 学习, 技术 tagged with python 
-</code></pre>
-
-<p>修改source/_includes/archive_post.html文件为</p>
-
-<p><a href="https://github.com/kiikoo/kiikoo.github.com/blob/source/source/_includes/archive_post.html">archive_post.htm</a></p>
-
-<ul>
-<li><h3>为octopress添加评论功能</h3></li>
-</ul>
-
-
-<p>octopress默认支持disqus评论，只需注册disqus帐号，并将_config.yml文件中关于disqus配置打开</p>
-
-<pre><code>isqus_short_name: yourAccount
-disqus_show_comment_count: true
-</code></pre>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[如何学习python]]></title>
