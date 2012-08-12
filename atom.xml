@@ -4,7 +4,7 @@
   <title><![CDATA[阿宝的Blog]]></title>
   <link href="http://kiikoo.github.com/atom.xml" rel="self"/>
   <link href="http://kiikoo.github.com/"/>
-  <updated>2012-08-12T21:26:53+08:00</updated>
+  <updated>2012-08-12T21:27:44+08:00</updated>
   <id>http://kiikoo.github.com/</id>
   <author>
     <name><![CDATA[阿宝]]></name>
@@ -42,7 +42,7 @@ octoprees官方整理了一个使用octopress搭建博客<a href="https://github
 <pre><code>&lt;section&gt;
  &lt;h1&gt;Categories&lt;/h1&gt;
  &lt;ul id="categories"&gt;
-   &lt;li&gt;&lt;a href='http://kiikoo.github.com/blog/categories/dns'&gt;Dns (1)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='http://kiikoo.github.com/blog/categories/学习分享'&gt;学习分享 (5)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='http://kiikoo.github.com/blog/categories/心情随笔'&gt;心情随笔 (2)&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href='http://kiikoo.github.com/blog/categories/学习分享'&gt;学习分享 (5)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='http://kiikoo.github.com/blog/categories/心情随笔'&gt;心情随笔 (2)&lt;/a&gt;&lt;/li&gt;
  &lt;/ul&gt;
 &lt;/section&gt;
 </code></pre>
