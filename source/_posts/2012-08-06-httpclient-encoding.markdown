@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "httpclient_encoding_decoding"
+title: "httpclient_encoding"
 date: 2012-08-06 21:26
 comments: true
-categories:
+categories: [学习分享]
+tags: [encode,decode]
 ---
 ###术语约定
 * Encoding: 编码（动词）
@@ -16,6 +17,7 @@ GET的请求参数在QueryString中，是URI的一部分。因此，对于GET请
 POST的请求参数在Body中，因此，对于POST请求，我们则需要关注，Body是如何encoding的？
 对于HttpClient和Tomcat来说，encoding和decoding本身是很容易的事情，关键是要知道charset是什么？要不通过API进行设置，要不通过配置文件进行配置。麻烦的是，URI和Body的charset还可以不一样，使用不同的方法进行设置和配置。
 HttpClient是一个类库，通过自身提供的API对URI和Body的charset进行设置；Tomcat通过配置项和Servlet API，对URI和Body的charset进行设置。
+<!--more-->
 ###HttpClient如何设置charset？ 
 #####设置GET请求QueryString的charset
 我们通过GETMethod的setQueryString方法设置QueryString。setQueryString方法有两种原型：

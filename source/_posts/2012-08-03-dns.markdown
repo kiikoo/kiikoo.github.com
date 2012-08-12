@@ -3,7 +3,9 @@ layout: post
 title: "DNS"
 date: 2012-08-03 13:14
 comments: true
-categories: 
+categories: [学习分享]
+tags: [DNS]
+
 ---
 #什么是DNS
 DNS 是域名系统 (Domain Name System) 的缩写，是因特网的一项核心服务，它作为可以将域名和IP地址相互映射的一个分布式数据库，能够使人更方便的访问互联网，而不用去记住能够被机器直接读取的IP数串。
@@ -20,6 +22,7 @@ DNS 是域名系统 (Domain Name System) 的缩写，是因特网的一项核心
 ![named.conf](/images/mypicture/namedconf.png)
 ###配置zone file
 ![named.conf](/images/mypicture/zoneconf.png)
+<!--more-->
 #了解DNS攻击
 ##DNS劫持
 DNS劫持就是通过劫持了DNS服务器，通过某些手段取得某域名的解析记录控制权，进而修改此域名的解析结果，导致对该域名的访问由原IP地址转入到修改后的指定IP，其结果就是对特定的网址不能访问或访问的是假网址，从而实现窃取资料或者破坏原有正常服务的目的。

@@ -3,7 +3,8 @@ layout: post
 title: "关于台风"
 date: 2012-08-08 10:09
 comments: true
-categories: 
+categories: [心情随笔]
+tags: [台风]
 ---
 每年都会来好几次台风，希望少些损失。。。
 

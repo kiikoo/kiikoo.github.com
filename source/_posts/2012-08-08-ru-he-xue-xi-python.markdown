@@ -3,7 +3,8 @@ layout: post
 title: "如何学习python"
 date: 2012-08-08 22:23
 comments: true
-categories: 
+categories: [学习分享] 
+tags: [python]
 ---
 很多时候当我们开始学习一门新的语言时，总是遵从着这一步骤。但是，如果你准备学习Python，那么你首先要做的就是打破这一惯例。
 
