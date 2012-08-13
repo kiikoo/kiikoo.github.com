@@ -4,7 +4,7 @@
   <title><![CDATA[阿宝的Blog]]></title>
   <link href="http://kiikoo.github.com/atom.xml" rel="self"/>
   <link href="http://kiikoo.github.com/"/>
-  <updated>2012-08-12T21:27:44+08:00</updated>
+  <updated>2012-08-13T12:37:59+08:00</updated>
   <id>http://kiikoo.github.com/</id>
   <author>
     <name><![CDATA[阿宝]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[sublime-text-2]]></title>
+    <link href="http://kiikoo.github.com/blog/2012/08/13/sublime-text-2/"/>
+    <updated>2012-08-13T12:34:00+08:00</updated>
+    <id>http://kiikoo.github.com/blog/2012/08/13/sublime-text-2</id>
+    <content type="html"><![CDATA[<blockquote><p>Sublime Text 2 is one of the fastest and most incredible code editors to be released in a long time! With a community and plugin ecosystem as passionate as this one, it just might be impossible for any other editor to catch up. I’ll show you my favorite tips and tricks today.</p></blockquote>
+
+<p><a href="http://net.tutsplus.com/tutorials/tools-and-tips/sublime-text-2-tips-and-tricks/">sublime text 2介绍</a></p>
+
+<p>决定安装下来试用看看。。。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[octopress个性化配置]]></title>
@@ -42,7 +55,7 @@ octoprees官方整理了一个使用octopress搭建博客<a href="https://github
 <pre><code>&lt;section&gt;
  &lt;h1&gt;Categories&lt;/h1&gt;
  &lt;ul id="categories"&gt;
-   &lt;li&gt;&lt;a href='http://kiikoo.github.com/blog/categories/学习分享'&gt;学习分享 (5)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='http://kiikoo.github.com/blog/categories/心情随笔'&gt;心情随笔 (2)&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href='http://kiikoo.github.com/blog/categories/学习分享'&gt;学习分享 (6)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='http://kiikoo.github.com/blog/categories/心情随笔'&gt;心情随笔 (2)&lt;/a&gt;&lt;/li&gt;
  &lt;/ul&gt;
 &lt;/section&gt;
 </code></pre>
@@ -99,9 +112,11 @@ octoprees官方整理了一个使用octopress搭建博客<a href="https://github
 <a style="font-size: NaN%" href="http://kiikoo.github.com/tags/markdown/">markdown</a>
 <a style="font-size: NaN%" href="http://kiikoo.github.com/tags/octopress/">octopress</a>
 <a style="font-size: NaN%" href="http://kiikoo.github.com/tags/python/">python</a>
+<a style="font-size: NaN%" href="http://kiikoo.github.com/tags/sublime-text-2/">sublime text 2</a>
 <a style="font-size: NaN%" href="http://kiikoo.github.com/tags/博客/">博客</a>
 <a style="font-size: NaN%" href="http://kiikoo.github.com/tags/台风/">台风</a>
 <a style="font-size: NaN%" href="http://kiikoo.github.com/tags/奥运会/">奥运会</a>
+<a style="font-size: NaN%" href="http://kiikoo.github.com/tags/工具/">工具</a>
 <a style="font-size: NaN%" href="http://kiikoo.github.com/tags/语法/">语法</a></p>
 
 <pre><code> 就没错误了。
