@@ -9,53 +9,15 @@ tags: [octopress,博客]
 一直想搭建个博客，之前在iteye，sina等上面杂乱的写过一些，但是始终没有坚持下来，也没怎么更新。最近[octopress](http://octopress.org)异常的火，我也忍不住用octopress+github搭建了自己的博客。折腾了几天，有了个雏形。
 octoprees官方整理了一个使用octopress搭建博客[列表](https://github.com/imathis/octopress/wiki/Octopress-Sites)，我在这上面参考了不少，可以多去这些博客逛逛。
 
+<!--more-->
+
 * ###为octopress添加category列表
 
 [参考blog](http://codemacro.com/2012/07/18/add-category-list-to-octopress/)
 
 增加category_list插件
 
-      module Jekyll
-      class CategoryListTag < Liquid::Tag
-       # def render(context)
-       #   html = ""
-       #   categories = context.registers[:site].categories.keys
-       #   categories.sort.each do |category|
-       #     posts_in_category = context.registers[:site].categories[category].size
-       #     category_dir = context.registers[:site].config['category_dir']
-       #     category_url = File.join(category_dir, category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase)
-       #     html << "<li class='category'><a href='/#{category_url}/'>#{category} (#{posts_in_category})</a></li>\n"
-       #   end
-       #   html
-       # end
-        def initialize(tag_name, markup, tokens)
-          @opts = {}
-          if markup.strip =~ /\s*counter:(\w+)/iu
-            @opts['counter'] = $1
-            markup = markup.strip.sub(/counter:\w+/iu,'')
-          end
-          super
-        end
-    
-        def render(context)
-          html = ""
-          config = context.registers[:site].config
-          category_dir = config['root'] + config['category_dir'] + '/'
-          categories = context.registers[:site].categories
-          categories.keys.sort_by{ |str| str.downcase }.each do |category|
-            url = category_dir + category.gsub(/_|\P{Word}/u, '-').gsub(/-{2,}/u, '-').downcase
-            html << "<li><a href='#{url}'>#{category.capitalize}"
-            #if @opts['counter']
-              html << " (#{categories[category].count})"
-            #end
-            html << "</a></li>"
-          end
-          html
-        end
-      end
-    end
-    
-    Liquid::Template.register_tag('category_list', Jekyll::CategoryListTag)
+[category_list_tag.rb](https://github.com/kiikoo/kiikoo.github.com/blob/source/plugins/category_list_tag.rb)
     
 增加aside
 
@@ -111,44 +73,18 @@ octoprees官方整理了一个使用octopress搭建博客[列表](https://github
      
 ####在文章最后显示文章的tags：
 
-在source/_layouts/page.html文件中找到
+将source/_layouts/page.html文件改为
 
-        <footer>
-          {% if page.date or page.author %}<p class="meta">
-            {% if page.author %}{% include post/author.html %}{% endif %}
-            {% include post/date.html %}{% if updated %}{{ updated }}{% else %}{{ time }}{% endif %}
-            {% if page.categories %}{% include post/categories.html %}{% endif %}
-            {% if page.tags %}{% include post/tags.html %}{% endif %}
-          </p>{% endif %}
-          {% unless page.sharing == false %}
-            {% include post/sharing.html %}
-          {% endunless %}
-        </footer>
-
-增加这句
-     
-     {% if page.tags %}{% include post/tags.html %}{% endif %}
-      </p>{% endif %}
+[page.html](https://github.com/kiikoo/kiikoo.github.com/blob/source/source/_layouts/page.html)
       
 ####Archive页面中展示以下效果
 
      posted in 学习, 技术 tagged with python 
      
-修改source/_includes/archive_post.html文件
+修改source/_includes/archive_post.html文件为
 
-    {% capture category %}{{ post.categories | size }}{% endcapture %}
-    {% capture tag %}{{ post.tags | size }}{% endcapture %}
-    <h1><a href="{{ root_url }}{{ post.url }}">{{post.title}}</a></h1>
-    <time datetime="{{ post.date | datetime | date_to_xmlschema }}" pubdate>{{ post.date | date: "<span class='month'>%b</span> <span class='day'>%d</span> <span class='year'>%Y</span>"}}</time>
-    {% if category != '0' %}
-    <footer>
-      <span class="categories">posted in {{ post.categories | category_links }}</span>
-    {% if tag != '0' %}
-      <span class="tags">tagged with {{ post.tags | tag_links }}</span>
-    {% endif %}
-    </footer>
-    {% endif %}
-
+[archive_post.htm](https://github.com/kiikoo/kiikoo.github.com/blob/source/source/_includes/archive_post.html)
+   
 * ###为octopress添加评论功能
 
 octopress默认支持disqus评论，只需注册disqus帐号，并将_config.yml文件中关于disqus配置打开
