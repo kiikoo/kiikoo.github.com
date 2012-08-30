@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: 博客 | 阿宝的Blog]]></title>
   <link href="http://kiikoo.github.com/tags/博客/atom.xml" rel="self"/>
   <link href="http://kiikoo.github.com/"/>
-  <updated>2012-08-13T12:59:16+08:00</updated>
+  <updated>2012-08-30T13:03:31+08:00</updated>
   <id>http://kiikoo.github.com/</id>
   <author>
     <name><![CDATA[阿宝]]></name>
@@ -42,7 +42,7 @@ octoprees官方整理了一个使用octopress搭建博客<a href="https://github
 <pre><code>&lt;section&gt;
  &lt;h1&gt;Categories&lt;/h1&gt;
  &lt;ul id="categories"&gt;
-   <li><a href='/blog/categories/学习分享'>学习分享 (7)</a></li><li><a href='/blog/categories/心情随笔'>心情随笔 (2)</a></li>
+   <li><a href='/blog/categories/学习分享'>学习分享 (7)</a></li><li><a href='/blog/categories/心情随笔'>心情随笔 (3)</a></li>
  &lt;/ul&gt;
 &lt;/section&gt;
 </code></pre>

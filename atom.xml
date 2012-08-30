@@ -4,7 +4,7 @@
   <title><![CDATA[阿宝的Blog]]></title>
   <link href="http://kiikoo.github.com/atom.xml" rel="self"/>
   <link href="http://kiikoo.github.com/"/>
-  <updated>2012-08-13T12:59:16+08:00</updated>
+  <updated>2012-08-30T13:03:31+08:00</updated>
   <id>http://kiikoo.github.com/</id>
   <author>
     <name><![CDATA[阿宝]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[棋局人生]]></title>
+    <link href="http://kiikoo.github.com/blog/2012/08/30/qi-ju-ren-sheng/"/>
+    <updated>2012-08-30T13:00:00+08:00</updated>
+    <id>http://kiikoo.github.com/blog/2012/08/30/qi-ju-ren-sheng</id>
+    <content type="html"><![CDATA[<blockquote><p>这个世界有时候许多事情就像这棋局一样，还未开始，就已经分出了胜负。</p></blockquote>
+
+<p><img src="http://kiikoo.github.com/image/mypicture/qiju.png" alt="棋局" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[subtle patterns]]></title>
@@ -64,7 +75,7 @@ octoprees官方整理了一个使用octopress搭建博客<a href="https://github
 <pre><code>&lt;section&gt;
  &lt;h1&gt;Categories&lt;/h1&gt;
  &lt;ul id="categories"&gt;
-   &lt;li&gt;&lt;a href='http://kiikoo.github.com/blog/categories/学习分享'&gt;学习分享 (7)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='http://kiikoo.github.com/blog/categories/心情随笔'&gt;心情随笔 (2)&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href='http://kiikoo.github.com/blog/categories/学习分享'&gt;学习分享 (7)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='http://kiikoo.github.com/blog/categories/心情随笔'&gt;心情随笔 (3)&lt;/a&gt;&lt;/li&gt;
  &lt;/ul&gt;
 &lt;/section&gt;
 </code></pre>
